@@ -26,7 +26,7 @@ class HomeDrawer extends StatelessWidget {
             height: 110.h,
             color: ColorsManager.green,
             child: Text(
-              StringsManager.drawerTitle,
+              StringsManager.drawerTitle(context),
               style: AppStyles.drawerTitle,
             ),
           ),
@@ -45,7 +45,7 @@ class HomeDrawer extends StatelessWidget {
                         width: 8.w,
                       ),
                       Text(
-                        StringsManager.categories,
+                        StringsManager.categories(context),
                         style: AppStyles.categories,
                       ),
                     ],
@@ -63,7 +63,7 @@ class HomeDrawer extends StatelessWidget {
                         width: 8.w,
                       ),
                       Text(
-                        StringsManager.settings,
+                        StringsManager.settings(context),
                         style: AppStyles.categories,
                       ),
                     ],

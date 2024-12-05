@@ -1,0 +1,14 @@
+{
+  "appTitle": "الأخبار",
+  "sports": "الرياضة",
+  "health": "الصحة",
+  "business": "التجارة",
+  "general": "عام",
+  "science": "العلوم",
+  "entertainment": "الترفيه",
+  "technology": "التكنولوجيا",
+  "settings": "الاعدادات",
+  "categories": "الفئات",
+  "pickCategoryText": "اختر الفئة المناسبة لك",
+  "language": "اللغة"
+}

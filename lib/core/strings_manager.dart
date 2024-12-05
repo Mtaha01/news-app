@@ -1,12 +1,49 @@
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter/widgets.dart';
+
 class StringsManager {
-  static const String drawerTitle = 'News App!';
-  static const String categories = 'Categories';
-  static const String settings = 'Settings';
-  static const String sports = 'Sports';
-  static const String general = 'General';
-  static const String health = 'Health';
-  static const String business = 'Business';
-  static const String entertainment = 'Entertainment';
-  static const String science = 'Science';
-  static const String tech = 'Technology';
+
+  static String drawerTitle(BuildContext context) {
+    return AppLocalizations.of(context)!.appTitle;
+  }
+
+  static String categories(BuildContext context) {
+    return AppLocalizations.of(context)!.categories;
+  }
+
+  static String settings(BuildContext context) {
+    return AppLocalizations.of(context)!.settings;
+  }
+
+  static String sports(BuildContext context) {
+    return AppLocalizations.of(context)!.sports;
+  }
+
+  static String general(BuildContext context) {
+    return AppLocalizations.of(context)!.general;
+  }
+
+  static String health(BuildContext context) {
+    return AppLocalizations.of(context)!.health;
+  }
+
+  static String business(BuildContext context) {
+    return AppLocalizations.of(context)!.business;
+  }
+
+  static String entertainment(BuildContext context) {
+    return AppLocalizations.of(context)!.entertainment;
+  }
+
+  static String science(BuildContext context) {
+    return AppLocalizations.of(context)!.science;
+  }
+
+  static String tech(BuildContext context) {
+    return AppLocalizations.of(context)!.technology;
+  }
+
+  static String pickCategoryText(BuildContext context) {
+    return AppLocalizations.of(context)!.pickCategoryText;
+  }
 }

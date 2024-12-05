@@ -16,40 +16,40 @@ class CategoryDM {
       required this.bgColor,
       required this.imagePath});
 
-  static List<CategoryDM> getAllCategories() => [
+  static List<CategoryDM> getAllCategories(BuildContext context) => [
         CategoryDM(
             id: ConstantManager.sportsId,
-            title: StringsManager.sports,
+            title: StringsManager.sports(context),
             bgColor: ColorsManager.green,
             imagePath: AssetsManager.sports),
         CategoryDM(
             id: ConstantManager.generalId,
-            title: StringsManager.general,
+            title: StringsManager.general(context),
             bgColor: ColorsManager.darkBlue,
             imagePath: AssetsManager.general),
         CategoryDM(
             id: ConstantManager.healthId,
-            title: StringsManager.health,
+            title: StringsManager.health(context),
             bgColor: ColorsManager.pink,
             imagePath: AssetsManager.health),
         CategoryDM(
             id: ConstantManager.businessId,
-            title: StringsManager.business,
+            title: StringsManager.business(context),
             bgColor: ColorsManager.brown,
             imagePath: AssetsManager.business),
         CategoryDM(
             id: ConstantManager.entertainmentId,
-            title: StringsManager.entertainment,
+            title: StringsManager.entertainment(context),
             bgColor: ColorsManager.red,
             imagePath: AssetsManager.entertainment),
         CategoryDM(
             id: ConstantManager.scienceId,
-            title: StringsManager.science,
+            title: StringsManager.science(context),
             bgColor: ColorsManager.yellow,
             imagePath: AssetsManager.science),
         CategoryDM(
             id: ConstantManager.techId,
-            title: StringsManager.tech,
+            title: StringsManager.tech(context),
             bgColor: ColorsManager.green,
             imagePath: AssetsManager.general),
       ];
