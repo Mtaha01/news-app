@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app_c12_online_sat/config/theme/app_styles.dart';
+import 'package:news_app_c12_online_sat/core/routes_manager.dart';
 import 'package:news_app_c12_online_sat/data/api/model/articles_response/article.dart';
 
 class ArticleItemWidget extends StatelessWidget {
@@ -14,8 +15,7 @@ class ArticleItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        // navigate to article details screen
-        // with params -> articl
+        Navigator.of(context).pushNamed(RoutesManager.articleDetails,arguments: article);
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),

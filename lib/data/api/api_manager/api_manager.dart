@@ -36,5 +36,18 @@ class  ApiManager{
    return articlesResponse;
 
   }
+
+  static Future<ArticlesResponse>searchForArticles(String q)async{
+    Uri url = Uri.https(_baseUrl,articlesEndPoint,{
+      'apiKey': _apiKey,
+      'q':q,
+    });
+    http.Response serverResponse = await http.get(url);
+    Map<String,dynamic> json = jsonDecode(serverResponse.body);
+
+    ArticlesResponse articlesResponse = ArticlesResponse.fromJson(json);
+    return articlesResponse;
+
+  }
 }
 
